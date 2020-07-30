@@ -68,5 +68,5 @@ class Cat(Animal):
 snoopy = Dog(-7,-4)
 garfield = Cat(17, 6.5)
 D = snoopy.distance(garfield)
-print(D)
-
+print(D) # maybe need to set to 6 decimal places?
+ 
