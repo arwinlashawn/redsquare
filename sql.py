@@ -69,6 +69,7 @@ for i in class_rows:
 	#print(i)
 	c.execute(class_sql, i)
 
+
 # insertion into Teacher table
 teacher_sql = f"""INSERT OR IGNORE INTO {table2}
 ({col2}, {col5})
@@ -79,6 +80,7 @@ teacher_rows = [("Voon", 5000), ("Awang", 6000)]
 for i in teacher_rows:
 	#print(i)
 	c.execute(teacher_sql, i)
+
 
 #  insertion into Student table
 student_sql = f"""INSERT OR IGNORE INTO {table3}
