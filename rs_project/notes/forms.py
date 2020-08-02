@@ -12,4 +12,4 @@ class PostForm(ModelForm):
 
 class SimpleForm(forms.Form):
 	message = forms.CharField(label='', max_length=200, required=True,
-		widget=forms.Textarea(attrs={'rows': 5, 'cols': 50}))
+		widget=forms.Textarea(attrs={'rows': 3, 'cols': 68, 'placeholder': 'Enter your note here...'}))
