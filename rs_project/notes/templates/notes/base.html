@@ -63,12 +63,11 @@
 	    <div class="col-md-6">
 	      <div class="content-section">
 	      	{% if user.is_authenticated %}  
-	        	<h4> Post a note now! </h4>
-	        	<form action="/addPost/" method="POST">
-	        	{% csrf_token %}
-    			<textarea style="height: 120px; width:400px;" type="text" name="content"> </textarea> 
-    			<hr>
-    			<input type="submit" value="Post"/>
+	      		<h3> Post a note now! </h3>
+	        	<form action="" method="post"> {% csrf_token %}
+	        		<hr>
+	        		{{ form.as_p }}      	
+    				<input type="submit", name="save"> </input>
 				</form>
 	        	{% else %}
 	          		<p style="text-align:center">Sign up now to start posting notes!</p>
